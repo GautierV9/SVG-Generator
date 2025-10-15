@@ -49,4 +49,4 @@ jobs:
             cd /var/www/svg-generator/server
             npm ci --omit=dev
             npm install astro send server-destroy
-            PORT=8089 pm2 restart svg-generator || PORT=8089 pm2 start entry.mjs --name svg-generator
+            PORT=4321 pm2 restart svg-generator || PORT=4321 pm2 start entry.mjs --name svg-generator
